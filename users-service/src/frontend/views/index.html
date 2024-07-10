@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Service</title>
+  <link rel="stylesheet" href="../public/styles.css">
+  <!-- Incluir fuentes de Google Fonts para un estilo más moderno -->
+  <link rel="stylesheet" href="/public/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+  <div id="roomForm" class="container">
+    <h2>Agregar Usuarios</h2>
+    <form id="addRoomForm">
+      <div class="form-group">
+        <label for="firstName">Nombre:</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Apellido:</label>
+        <input type="text" id="lastName" name="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Telefono:</label>
+        <input type="text" id="capacity" name="phone" required>
+      </div>
+      <button type="submit" class="btn">Añadir</button>
+    </form>
+  </div>
+
+  <div id="roomList" class="container">
+    <h2>Lista de Habitaciones</h2>
+    <ul id="rooms" class="room-list"></ul>
+  </div>
+  
+  <script src="/assets/scripts.js"></script>
+  
+</body>
+</html>

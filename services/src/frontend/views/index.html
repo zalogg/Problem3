@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service</title>
+  <link rel="stylesheet" href="../public/styles.css">
+</head>
+<body>
+ 
+  <div id="roomForm">
+    <h2>Agregar Servicios</h2>
+    <form id="addRoomForm">
+      <label for="serviceName">Nombre del Servicio:</label>
+      <input type="text" id="serviceName" name="serviceName" required>
+
+      <label for="description">Descripción:</label>
+      <input type="text" id="description" name="description" required>
+      
+      <label for="price">Precio:</label>
+      <input type="text" id="price" name="price" required>
+
+      <button type="submit">Añadir</button>
+    </form>
+  </div>
+
+  <div id="roomList">
+    <h2>Servicios</h2>
+    <ul id="rooms"></ul>
+  </div>
+  
+  <script src="/assets/scripts.js"></script>
+  
+</body>
+</html>
+
