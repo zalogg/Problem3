@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  service-video:
+    build: ../room-service
+    ports:
+      - 8080:3004
+  service-crud:
+    build: ../services
+    ports:
+      - 8081:3006
+  service-image:
+    build: ../users-service
+    ports:
+      - 8082:3005
+
+
+
+

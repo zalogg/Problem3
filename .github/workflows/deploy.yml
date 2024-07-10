@@ -21,7 +21,7 @@ jobs:
         
     - name: Build and upload Docker images
       run: |
-        services=("sroom-service" "services" "users-service")
+        services=("room-service" "services" "users-service")
         
         for service in "${services[@]}"
         do
